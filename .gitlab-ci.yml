@@ -20,3 +20,4 @@ deploy_stage:
     stage: deploy
     script:
         - docker run -d --name test-$CI_PIPELINE_ID $IMAGE_NAME:$CI_PIPELINE_ID
+        - docker ps
