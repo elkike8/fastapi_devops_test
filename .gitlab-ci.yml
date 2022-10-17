@@ -19,5 +19,5 @@ build_stage:
 deploy_stage:
     stage: deploy
     script:
-        - docker run -d -p 80 --name test-$CI_PIPELINE_ID $IMAGE_NAME:$CI_PIPELINE_ID
+        - docker run -d -p 80:80 --name test-$CI_PIPELINE_ID $IMAGE_NAME:$CI_PIPELINE_ID
         - docker ps
