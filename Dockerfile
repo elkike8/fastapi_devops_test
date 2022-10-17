@@ -9,3 +9,5 @@ RUN pip install Jinja2
 COPY app.py app.py
 
 COPY /html /html
+
+CMD [ "uvicorn", "app:app" ]
