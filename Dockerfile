@@ -10,4 +10,6 @@ COPY app.py app.py
 
 COPY /html /html
 
+EXPOSE 80
+
 CMD [ "uvicorn", "app:app" ]
