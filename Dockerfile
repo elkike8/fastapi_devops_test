@@ -12,4 +12,4 @@ COPY /html /html
 
 EXPOSE 80
 
-CMD [ "uvicorn", "app:app" ]
+CMD python -m uvicorn app:app --host 0.0.0.0 --port 80
