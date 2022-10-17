@@ -1,0 +1,12 @@
+variables:
+    IMAGE_NAME: fastapi
+
+default:
+    tags:
+        - python
+
+build_stage:
+    script:
+        - echo "build Dockerfile"
+        - cat Dockerfile
+        - docker build -t $IMAGE_NAME:$CI_PIPWLINE_ID .
