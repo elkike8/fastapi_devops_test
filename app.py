@@ -10,3 +10,4 @@ app.mount("/", StaticFiles(directory="html", html=True), name="static")
 #     uvicorn.run(app)
 
 # to run from command line uvicorn app:app
+#
